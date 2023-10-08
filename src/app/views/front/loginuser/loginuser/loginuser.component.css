@@ -1,0 +1,38 @@
+.custom-form {
+    padding: 0px 500px 50px ;
+    background-color: rgb(235, 242, 245);
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .custom-input {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background-color: rgb(248, 248, 248);
+    color: #35587D;
+  }
+  
+  .custom-input:focus {
+    outline: none;
+    border-color: #4c739c;
+  }
+  
+  .custom-button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(248, 248, 248);
+    color: #35587D;
+    border: 3px solid #fff;
+  }
+  
+  .custom-button:hover {
+    background-color: rgb(235, 242, 245);
+    color: #052548;
+    border-color: #4c739c;
+  }
+  
