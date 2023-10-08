@@ -9,7 +9,6 @@ const routes: Routes = [
     {path:'loginuser',loadChildren:()=>import('./views/front/loginuser/loginuser.module').then(m=>m.LoginuserModule)},
     {path:'register',loadChildren:()=>import('./views/front/register/register.module').then(m=>m.RegisterModule)},
     {path:'vote',loadChildren:()=>import('./views/front/vote/vote.module').then(m=>m.VoteModule)},
-    {path:'score',loadChildren:()=>import('./views/front/score/score.module').then(m=>m.ScoreModule)}
   ]},
   {path:'admin',component:AdminLayoutComponent,children:[
     {path:'',loadChildren:()=>import('./views/admin/dashboard/dashboard.module').then(m=>m.DashboardModule)},
