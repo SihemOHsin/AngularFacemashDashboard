@@ -2,8 +2,7 @@
 
     <!-- Page Heading -->
     <h1 class="h3 mb-2 text-gray-800">Users</h1>
-    <p class="mb-4">it s a demo , users are welcome to try .</p>
-            
+    <p class="mb-4">it s a demo , users are welcome to try .</p> 
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
@@ -16,57 +15,34 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Office</th>
-                            <th>Age</th>
-                            <th>Start date</th>
-                            <th>Salary</th>
+                            <th>Email</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Actions</th>
                         </tr>
                     </thead>
                     <tfoot>
                         <tr>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Office</th>
-                            <th>Age</th>
-                            <th>Start date</th>
-                            <th>Salary</th>
+                            <th>Email</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Actions</th>
                         </tr>
                     </tfoot>
                     <tbody>
-                        <tr>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
+                        <tr *ngFor="let item of dataArray">
+                            <td>{{item.email}}</td>
+                            <td>{{item.firstname}}</td>
+                            <td>{{item.lastname}}</td>
+                            <button class="btn btn-info">Details</button>
+                            <button class="btn btn-info">Delete</button> 
+                            <button class="btn btn-info">Update</button> 
+                            <!-- <td>
+                                <button class="btn btn-info">Details</button> 
+                                <button class="btn btn-info" (click) ="delete(item._id)">Delete</button> 
+                            </td> -->
                         </tr>
-                        <tr>
-                            <td>Garrett Winters</td>
-                            <td>Accountant</td>
-                            <td>Tokyo</td>
-                            <td>63</td>
-                            <td>2011/07/25</td>
-                            <td>$170,750</td>
-                        </tr>
-                        <tr>
-                            <td>Ashton Cox</td>
-                            <td>Junior Technical Author</td>
-                            <td>San Francisco</td>
-                            <td>66</td>
-                            <td>2009/01/12</td>
-                            <td>$86,000</td>
-                        </tr>
-                        <tr>
-                            <td>Donna Snider</td>
-                            <td>Customer Support</td>
-                            <td>New York</td>
-                            <td>27</td>
-                            <td>2011/01/25</td>
-                            <td>$112,000</td>
-                        </tr>
+
                     </tbody>
                 </table>
             </div>

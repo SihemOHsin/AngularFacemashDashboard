@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FrontLayoutComponent } from './layouts/front-layout/front-layout.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { AuthAdminLayoutComponent } from './layouts/auth-admin-layout/auth-admin-layout.component';
 
 const routes: Routes = [
   {path:'',component:FrontLayoutComponent,children:[
@@ -17,7 +18,8 @@ const routes: Routes = [
     {path:'allusers',loadChildren:()=>import('./views/admin/allusers/allusers.module').then(m=>m.AllusersModule)},
     {path:'adduser',loadChildren:()=>import('./views/admin/adduser/adduser.module').then(m=>m.AdduserModule)}
 
-  ]}
+  ]},
+  {path:'admin/login',component:AuthAdminLayoutComponent }
 ];
 
 @NgModule({

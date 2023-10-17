@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { AdduserRoutingModule } from './adduser-routing.module';
 import { AdduserComponent } from './adduser/adduser.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +12,9 @@ import { AdduserComponent } from './adduser/adduser.component';
   ],
   imports: [
     CommonModule,
-    AdduserRoutingModule
+    AdduserRoutingModule,
+    FormsModule
+
   ]
 })
 export class AdduserModule { }
