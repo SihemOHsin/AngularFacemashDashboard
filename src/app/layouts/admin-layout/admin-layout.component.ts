@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthadminService } from 'src/app/services/authadmin.service';
 
 @Component({
   selector: 'app-admin-layout',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./admin-layout.component.css']
 })
 export class AdminLayoutComponent {
-
+  name:any
+   constructor(private adminServ:AuthadminService){
+    this.name=localStorage.getItem('name')
+   }
 }

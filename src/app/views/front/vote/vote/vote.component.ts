@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ChatService } from 'src/app/views/services/shared/chat.service';
-import { ScoreService } from 'src/app/views/services/shared/score.service';
+import { ChatService } from 'src/app/services/shared/chat.service';
+import { ScoreService } from 'src/app/services/shared/score.service';
+
 
 @Component({
   selector: 'app-vote',
